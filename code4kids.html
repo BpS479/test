@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Learning Code For Kids</title>
+  <link rel="stylesheet" href="./code4kids.css">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <script src="/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</head>
+
+<body>
+
+  <!--nav  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🎓Code4Kids</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#course">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#registration">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificateBody">Certificate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#member">Member</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pic" id="home">
+    <div class="contentNav">
+      <img src="https://i.pinimg.com/1200x/ea/9d/f4/ea9df4d342ad5c44168abec1bbe48bdf.jpg">
+      <!-- <img src="./navphoto1.jpg" alt=""> -->
+      <div class="home-text">
+        <h1>Let's study!</h1>
+        <p> Do you interest learning coding? If you are interested,I will introduce you to this website.</p><br>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- courses -->
+  <div class="mixed" style="display: inline" id="course">
+    <!-- html courses       -->
+    <div class="htmlcsscoursesBody">
+      <div class="htmlCssBox">
+        <!-- header -->
+        <header class="htmlcssHeader">
+          <h1 class="htmlcssheaderh1">HTML & CSS COURSES</h1>
+          <p>Learn HTML & CSS BASIC</p>
+        </header>
+
+        <!-- html mean -->
+        <div class="game-area">
+          <div class="game" id="meanGame">
+            <button class="game-btn" onclick="toggleGame('meanGameContent')">
+              HTML MEAN
+            </button>
+
+            <div class="game-content" id="meanGameContent">
+              <p>Hypertext Markup Language(HTML)</p>
+            </div>
+          </div>
+        </div>
+
+        <!--CSS MEAN -->
+        <div class="game-area">
+          <div class="game" id="structureGame">
+            <button class="game-btn" onclick="toggleGame('structureGameContent')">
+              CSS MEAN
+            </button>
+
+            <div class="game-content" id="structureGameContent">
+              <p>Cascading Style Sheets(CSS)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- html heading element -->
+        <div class="game-area">
+          <div class="game" id="headGame">
+            <button class="game-btn" onclick="toggleGame('headGameContent')">
+              HTML HEADING ELEMENT
+            </button>
+
+            <div class="game-content" id="headGameContent">
+              <p>Click Tag</p>
+
+              <div class="tag-game-area">
+                <div class="tag" onclick="showTagInfo('h1')">&lt;h1&gt;</div>
+                <div class="tag" onclick="showTagInfo('h2')">&lt;h2&gt;</div>
+                <div class="tag" onclick="showTagInfo('h3')">&lt;h3&gt;</div>
+                <div class="tag" onclick="showTagInfo('h4')">&lt;h4&gt;</div>
+                <div class="tag" onclick="showTagInfo('h5')">&lt;h5&gt;</div>
+                <div class="tag" onclick="showTagInfo('h6')">&lt;h6&gt;</div>
+              </div>
+
+              <div class="tag-info" id="headInfo"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- html phrase element -->
+        <div class="game-area">
+          <div class="game" id="tagGame">
+            <button class="game-btn" onclick="toggleGame('tagGameContent')">
+              HTML PHRASE ELEMENT
+            </button>
+
+            <div class="game-content" id="tagGameContent">
+              <p>Click Tag</p>
+              <div class="tag-game-area">
+                <div class="tag" onclick="showTagInfo('b')">&lt;b&gt;</div>
+                <div class="tag" onclick="showTagInfo('i')">&lt;i&gt;</div>
+                <div class="tag" onclick="showTagInfo('mark')">
+                  &lt;mark&gt;
+                </div>
+                <div class="tag" onclick="showTagInfo('sub')">
+                  &lt;sub&gt;
+                </div>
+                <div class="tag" onclick="showTagInfo('sup')">
+                  &lt;sup&gt;
+                </div>
+              </div>
+
+              <div class="tag-info" id="tagInfo"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ol list -->
+        <div class="game-area">
+          <div class="game" id="olGame">
+            <button class="game-btn" onclick="toggleGame('olGameContent')">
+              Ordered List
+            </button>
+
+            <div class="game-content" id="olGameContent">
+              <p>Click Tag</p>
+              <div class="tag" onclick="showTagInfo('ol')">
+                &lt;ol&gt;&lt;/ol&gt;
+              </div>
+              <div class="tag-info" id="olInfo"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ul list -->
+        <div class="game-area">
+          <div class="game" id="ulGame">
+            <button class="game-btn" onclick="toggleGame('ulGameContent')">
+              Unordered List
+            </button>
+
+            <div class="game-content" id="ulGameContent">
+              <p>Click Tag</p>
+              <div class="tag" onclick="showTagInfo('ul')">
+                &lt;ul&gt;&lt;/ul&gt;
+              </div>
+              <div class="tag-info" id="ulInfo"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- change color -->
+        <div class="game-area">
+          <div class="game" id="colorGame">
+            <button class="game-btn" onclick="toggleGame('colorGameContent')">
+              CSS Color
+            </button>
+
+            <div class="game-content" id="colorGameContent">
+              <p>Change Color</p>
+
+              <div class="color-box" id="colorBox"></div>
+              <div class="color-controls">
+                <button class="color-btn red" onclick="changeColor('#ff6b6b')">
+                  #ff6b6b
+                </button>
+                <button class="color-btn blue" onclick="changeColor('#4f72e8')">
+                  #4f72e8
+                </button>
+                <button class="color-btn green" onclick="changeColor('#6bcb77')">
+                  #6bcb77
+                </button>
+                <button class="color-btn yellow" onclick="changeColor('#ffd93d')">
+                  #ffd93d
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- css animation -->
+        <div class="game-area">
+          <div class="game" id="animationGame">
+            <button class="game-btn" onclick="toggleGame('animationGameContent')">
+              CSS Animation
+            </button>
+
+            <div class="game-content" id="animationGameContent">
+              <p>Change Animation</p>
+
+              <div class="color-box" id="animationBox"></div>
+
+              <div class="color-controls">
+                <button class="color-btn red" onclick="applyAnimation('bounce')">
+                  Bounce
+                </button>
+                <button class="color-btn blue" onclick="applyAnimation('spin')">
+                  Spin
+                </button>
+                <button class="color-btn green" onclick="applyAnimation('fade')">
+                  Fade
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- css courses -->
+    <div class="cssproperitesBody">
+      <div class="cssPropertiesBox">
+        <header class="cssproperitesHeader">
+          <h1 class="csspropertiesh1">CSS Properties Courses</h1>
+          <p class="subtitle">
+            Learn CSS properties with interactive examples
+          </p>
+        </header>
+
+        <div class="courses-grid">
+          <!-- Course 1: Box Model -->
+          <div class="course">
+            <h2>Box Model</h2>
+            <p>
+              Understand the CSS box model: margin, padding, border, and
+              content.
+            </p>
+
+            <div class="demo-box" id="boxModelDemo">Content</div>
+
+            <div class="property-control">
+              <div class="slider-container">
+                <label for="marginSlider">Margin:</label>
+                <input type="range" id="marginSlider" min="0" max="50" value="10" oninput="updateBoxModel()" />
+                <span class="value-display" id="marginValue">10px</span>
+              </div>
+
+              <div class="slider-container">
+                <label for="paddingSlider">Padding:</label>
+                <input type="range" id="paddingSlider" min="0" max="50" value="20" oninput="updateBoxModel()" />
+                <span class="value-display" id="paddingValue">20px</span>
+              </div>
+
+              <div class="slider-container">
+                <label for="borderSlider">Border:</label>
+                <input type="range" id="borderSlider" min="0" max="20" value="5" oninput="updateBoxModel()" />
+                <span class="value-display" id="borderValue">5px</span>
+              </div>
+
+              <div class="color-picker">
+                <label for="borderColor">Border Color:</label>
+                <input type="color" id="borderColor" value="#4ecdc4" oninput="updateBoxModel()" />
+              </div>
+            </div>
+
+            <div class="code-example" id="boxModelCode">
+              .element {<br />
+              &nbsp;&nbsp;margin: 10px;<br />
+              &nbsp;&nbsp;padding: 20px;<br />
+              &nbsp;&nbsp;border: 5px solid #4ecdc4;<br />
+              }
+            </div>
+          </div>
+
+          <!-- Course 2: Flexbox -->
+          <div class="course">
+            <h2>Flexbox</h2>
+            <p>Learn how to use Flexbox for modern layout designs.</p>
+
+            <div class="demo-box" id="flexboxDemo" style="
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-items: center;
+                ">
+              <div style="width: 30px; height: 30px; background: #1d429f"></div>
+              <div style="width: 30px; height: 30px; background: #12b8ad"></div>
+              <div style="width: 30px; height: 30px; background: #be0f0f"></div>
+            </div>
+
+            <div class="controls">
+              <button class="control-btn" onclick="updateFlexbox('flex-start')">
+                Start
+              </button>
+              <button class="control-btn" onclick="updateFlexbox('center')">
+                Center
+              </button>
+              <button class="control-btn" onclick="updateFlexbox('flex-end')">
+                End
+              </button>
+              <button class="control-btn" onclick="updateFlexbox('space-between')">
+                Space Between
+              </button>
+              <button class="control-btn" onclick="updateFlexbox('space-around')">
+                Space Around
+              </button>
+            </div>
+
+            <div class="code-example" id="flexboxCode">
+              .container {<br />
+              &nbsp;&nbsp;display: flex;<br />
+              &nbsp;&nbsp;justify-content: center;<br />
+              &nbsp;&nbsp;align-items: center;<br />
+              &nbsp;&nbsp;gap: 10px;<br />
+              &nbsp;&nbsp;flex-wrap: wrap;<br />
+              }
+            </div>
+          </div>
+
+          <!-- Course 3: Transform -->
+          <div class="course">
+            <h2>Transform</h2>
+            <p>Explore CSS transform properties to manipulate elements.</p>
+
+            <div class="demo-box" id="transformDemo">Transform Me!</div>
+
+            <div class="controls">
+              <button class="control-btn" onclick="updateTransform('rotate', '45deg')">
+                Rotate
+              </button>
+              <button class="control-btn" onclick="updateTransform('scale', '1.5')">
+                Scale
+              </button>
+              <button class="control-btn" onclick="updateTransform('skew', '20deg')">
+                Skew
+              </button>
+              <button class="control-btn" onclick="updateTransform('translate', '30px')">
+                Translate
+              </button>
+              <button class="control-btn" onclick="updateTransform('reset', '')">
+                Reset
+              </button>
+            </div>
+
+            <div class="code-example" id="transformCode">
+              .element {<br />
+              &nbsp;&nbsp;transform: none;<br />
+              }
+            </div>
+          </div>
+
+          <!-- Course 4: Transition -->
+          <div class="course">
+            <h2>Transition</h2>
+            <p>Learn how to create smooth transitions between states.</p>
+
+            <div class="demo-box" id="transitionDemo">Hover Me!</div>
+
+            <div class="property-control">
+              <div class="slider-container">
+                <label for="durationSlider">Duration:</label>
+                <input type="range" id="durationSlider" min="0" max="5" step="0.5" value="0.5"
+                  oninput="updateTransition()" />
+                <span class="value-display" id="durationValue">0.5s</span>
+              </div>
+
+              <div class="slider-container">
+                <label for="propertySelect">Property:</label>
+                <select id="propertySelect" onchange="updateTransition()">
+                  <option value="all">All</option>
+                  <option value="background">Background</option>
+                  <option value="transform">Transform</option>
+                  <option value="border-radius">Border Radius</option>
+                </select>
+              </div>
+
+              <div class="slider-container">
+                <label for="timingSelect">Timing:</label>
+                <select id="timingSelect" onchange="updateTransition()">
+                  <option value="ease">Ease</option>
+                  <option value="ease-in">Ease In</option>
+                  <option value="ease-out">Ease Out</option>
+                  <option value="ease-in-out">Ease In Out</option>
+                  <option value="linear">Linear</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="code-example" id="transitionCode">
+              .element {<br />
+              &nbsp;&nbsp;transition: all 0.5s ease;<br />
+              }<br /><br />
+              .element:hover {<br />
+              &nbsp;&nbsp;background: #4ecdc4;<br />
+              &nbsp;&nbsp;transform: scale(1.2);<br />
+              &nbsp;&nbsp;border-radius: 25px;<br />
+              }
+            </div>
+          </div>
+
+          <!-- Course 5: Gradient -->
+          <div class="course">
+            <h2>Gradient</h2>
+            <p>Create beautiful gradient backgrounds with CSS.</p>
+
+            <div class="demo-box" id="gradientDemo">Gradient</div>
+
+            <div class="property-control">
+              <div class="color-picker">
+                <label for="color1">Color 1:</label>
+                <input type="color" id="color1" value="#ff6b6b" oninput="updateGradient()" />
+              </div>
+
+              <div class="color-picker">
+                <label for="color2">Color 2:</label>
+                <input type="color" id="color2" value="#4ecdc4" oninput="updateGradient()" />
+              </div>
+
+              <div class="slider-container">
+                <label for="angleSlider">Angle:</label>
+                <input type="range" id="angleSlider" min="0" max="360" value="135" oninput="updateGradient()" />
+                <span class="value-display" id="angleValue">135deg</span>
+              </div>
+
+              <div class="slider-container">
+                <label for="gradientType">Type:</label>
+                <select id="gradientType" onchange="updateGradient()">
+                  <option value="linear">Linear</option>
+                  <option value="radial">Radial</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="code-example" id="gradientCode">
+              .element {<br />
+              &nbsp;&nbsp;background: linear-gradient(135deg, #ff6b6b,
+              #4ecdc4);<br />
+              }
+            </div>
+          </div>
+
+          <!-- Course 6: Practical Examples -->
+
+          <div class="course">
+            <h2>Practical Examples</h2>
+            <p>Real-world animation examples that you can use in your projects.</p>
+
+            <div class="animation-box" id="main-box">Choose an Effect</div>
+
+            <div class="controls">
+              <button class="control-btn" onclick="applyEffect('loading')">
+                Loading
+              </button>
+              <button class="control-btn" onclick="applyEffect('notification')">
+                Notification
+              </button>
+              <button class="control-btn" onclick="applyEffect('button')">
+                Button Effect
+              </button>
+            </div>
+
+            <div class="code-example" id="code-box"></div>
+          </div>
+
+          <!-- Notification sound -->
+          <audio id="notiSound" src="noti.mp3"></audio>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration -->
+  <div>
+    <form class="stackedForm" id="registration">
+      <ul class="wrapper">
+        <li style="--i: 4">
+          <input name="name" id="regName" required="" placeholder="Name" type="text" class="input" />
+        </li>
+        <li style="--i: 3">
+          <input type="number" name="age" id="regAge" required="required" placeholder="Age" class="input" min="8"
+            max="14" />
+        </li>
+        <li style="--i: 2">
+          <input type="email" name="email" id="regEmail" required="" placeholder="E-Mail" class="input" />
+        </li>
+        <button style="--i: 1">
+          <span>Submit</span>
+        </button>
+      </ul>
+    </form>
+  </div>
+
+
+  <!-- quiz -->
+  <div class="quizContainer" id="quiz">
+    <h1 class="quiz1">🎉 Fun Quiz for Kids</h1>
+    <div class="quiz2">
+      <!-- Section 1 -->
+      <div class="section">
+        <div class="question">1.What does HTML stand for?</div>
+        <div class="options">
+          <img src="./quiz1.jpg" class="sticker1" />
+          <button onclick="checkAnswer(this, false)">
+            Hyperlink Markup Language
+          </button>
+          <button onclick="checkAnswer(this, false)">
+            HyperText Makeup Language
+          </button>
+          <button onclick="checkAnswer(this, true)">
+            HyperText Markup Language
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <div class="question">
+          2.Which tag is used for the largest heading?
+        </div>
+        <div class="options">
+          <img src="./quiz2.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">head</button>
+          <button onclick="checkAnswer(this, true)">h1</button>
+          <button onclick="checkAnswer(this, false)">h6</button>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <div class="question">3.Which tag is used for ordered list?</div>
+        <div class="options">
+          <img src="./quiz3.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">ul</button>
+          <button onclick="checkAnswer(this, false)">li</button>
+          <button onclick="checkAnswer(this, true)">ol</button>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <div class="question">4.Which tag is used to create a hyperlink?</div>
+        <div class="options">
+          <img src="./quiz4.png" class="sticker" />
+          <button onclick="checkAnswer(this, true)">a</button>
+          <button onclick="checkAnswer(this, false)">link</button>
+          <button onclick="checkAnswer(this, false)">href</button>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <div class="question">5.Which CSS is correct to make text red?</div>
+        <div class="options">
+          <img src="./quiz5.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">color: blue;</button>
+          <button onclick="checkAnswer(this, true)">color: red;</button>
+          <button onclick="checkAnswer(this, false)">background: red;</button>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="section">
+        <div class="question">6.How do you remove the underline?</div>
+        <div class="options">
+          <img src="./quiz6.png" class="sticker" />
+          <button onclick="checkAnswer(this, true)">
+            text-decoration: none;
+          </button>
+          <button onclick="checkAnswer(this, false)">
+            text-decoration: underline;
+          </button>
+          <button onclick="checkAnswer(this, false)">
+            font-style: italic;
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 7-->
+      <div class="section">
+        <div class="question">7.Which CSS sets a yellow background?</div>
+        <div class="options">
+          <img src="./quiz7.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">
+            bg-color: yellow;
+          </button>
+          <button onclick="checkAnswer(this, true)">
+            background-color: yellow;
+          </button>
+          <button onclick="checkAnswer(this, false)">color: yellow;</button>
+        </div>
+      </div>
+      <!-- Section 8-->
+      <div class="section">
+        <div class="question">8.Which tag makes a button?</div>
+        <div class="options">
+          <img src="./quiz8.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">btn</button>
+          <button onclick="checkAnswer(this, true)">button</button>
+          <button onclick="checkAnswer(this, false)">link</button>
+        </div>
+      </div>
+
+      <!-- Section 9-->
+      <div class="section">
+        <div class="question">9.Which tag adds an image?</div>
+        <div class="options">
+          <img src="./quiz9.png" class="sticker" />
+          <button onclick="checkAnswer(this, true)">img</button>
+          <button onclick="checkAnswer(this, false)">image</button>
+          <button onclick="checkAnswer(this, false)">src</button>
+        </div>
+      </div>
+
+      <!-- Section 10-->
+      <div class="section">
+        <div class="question">10.Which tag is used for line break?</div>
+        <div class="options">
+          <img src="./quiz10.png" class="sticker" />
+          <button onclick="checkAnswer(this, false)">hr</button>
+          <button onclick="checkAnswer(this, false)">tr</button>
+          <button onclick="checkAnswer(this, true)">br</button>
+        </div>
+      </div>
+    </div>
+    <button class="quizs" id="quizBtn">Submit Answers</button>
+  </div>
+  <br><br>
+
+  <!-- certificate -->
+  <div class="bg-image" id="certificateBody" style="display:none;">
+    <div class="bg-text">
+      <h1 class="title">CERTIFICATE OF ACHIEVEMENT</h1><br>
+      <div class="present">This Certificate Is Presented To</div><br>
+      <div class="name1" id="certName"><span><b></b></span></div><br>
+      <!-- <span style="color: aqua;" id="certName"></span> -->
+
+      <p class="paragraph">For successfully completing a free online course
+        <span class="para">HTML & CSS!</span>
+      </p><br>
+      <div class="congrat">Congratulations On a Job Well Done!</div><br><br>
+      <div class="date">DATE: <span id="certDate"></span></div>
+      <!-- <div class="sign">SIGNATURE-----------</div> -->
+    </div>
+  </div>
+
+
+  <!-- review -->
+  <div>
+    <section id="review" class="py-5" style="background-color: #78c2e5;">
+      <div class="container">
+        <h2 class="text-center mb-5">What Parents Say!</h2>
+        <div class="row text-center">
+          <div class="col-md-3.8">
+            <blockquote class="blockquote">
+              <p>“My daughter loves the lessons. She made her first game last week!”</p>
+              <footer class="blockquote-footer">Sarah J., Parent</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-3.8">
+            <blockquote class="blockquote">
+              <p>“An amazing, free resource. Better than many paid programs out there.”</p>
+              <footer class="blockquote-footer">Tom R., Educator</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-3.8">
+            <blockquote class="blockquote">
+              <p>“Fun, safe, and easy to follow. My kids are learning real skills.”</p>
+              <footer class="blockquote-footer">Alicia P., Parent</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- rating -->
+<div id="review-component" aria-live="polite">
+  <section class="review-overview" aria-label="Course rating overview">
+    <div class="review-average">
+      <div class="review-average-number" id="review-average-number">0.0</div>
+      <div class="review-average-stars" id="review-average-stars" aria-hidden="true"></div>
+      <div class="review-total-count" id="review-total-count">0 reviews</div>
+    </div>
+
+    <div class="review-actions">
+      <button class="review-write-btn" id="review-open-form">Write a review</button>
+    </div>
+  </section>
+
+  <section class="review-form-wrap" id="review-form-wrap" aria-hidden="true">
+    <form id="review-form" novalidate>
+      <div class="review-row">
+        <label for="review-name">Your name</label>
+        <input id="review-name" name="name" type="text" placeholder="Parent name" required />
+      </div>
+
+      <div class="review-row">
+        <label>Overall rating</label>
+        <div class="review-stars" id="review-stars" role="radiogroup" aria-label="Star rating (1 to 5)">
+          <button type="button" class="review-star" data-value="1" aria-checked="false" role="radio" aria-label="1 star">★</button>
+          <button type="button" class="review-star" data-value="2" aria-checked="false" role="radio" aria-label="2 stars">★</button>
+          <button type="button" class="review-star" data-value="3" aria-checked="false" role="radio" aria-label="3 stars">★</button>
+          <button type="button" class="review-star" data-value="4" aria-checked="false" role="radio" aria-label="4 stars">★</button>
+          <button type="button" class="review-star" data-value="5" aria-checked="false" role="radio" aria-label="5 stars">★</button>
+        </div>
+        <input type="hidden" id="review-rating" name="rating" required />
+      </div>
+
+      <div class="review-row">
+        <label for="review-text">Your review</label>
+        <textarea id="review-text" name="review" rows="4" placeholder="Share what you liked about the course..." required></textarea>
+      </div>
+
+      <div class="review-actions">
+        <button type="submit" class="review-submit">Submit</button>
+        <button type="button" class="review-cancel" id="review-cancel">Cancel</button>
+      </div>
+
+      <div class="review-error" id="review-error" aria-live="assertive" hidden></div>
+    </form>
+  </section>
+
+  <section class="review-list" id="review-list" aria-label="Parent reviews">
+   
+  </section>
+</div>
+
+
+
+ 
+
+
+
+  <!-- contact -->
+  <div id="contact">
+    <h1 class="ContactTitle">Contact Us</h1>
+    <form class="grid">
+      <div class="row">
+        <div>
+          <label for="fullName">Name *</label><br>
+          <input id="fullName" name="fullName" type="text" placeholder="Mg Mg / Ma Ma" required />
+        </div>
+        <div>
+          <label for="email">Email *</label><br>
+          <input id="email" name="email" type="email" inputmode="email" placeholder="you@example.com" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="role">Insterested Role *</label><br>
+          <select id="role" name="role" required>
+            <option value="">Choose…</option>
+            <option>Mentor (Beginner)</option>
+            <option>Mentor (Intermediate)</option>
+            <option>Event Helper</option>
+            <option>Content Creator</option>
+          </select>
+        </div>
+        <div>
+          <label for="time">Regularly available time</label><br>
+          <input id="time" name="time" required type="text" placeholder="e.g., Sat 1–3 PM" />
+        </div>
+
+      </div>
+      <div>
+        <label for="message">A little content/Experience</label><br>
+        <textarea id="message" name="message" required rows="4"
+          placeholder="Kids teaching experience, why you want to volunteer…"></textarea>
+      </div>
+
+
+
+      <div class="form-actions">
+        <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+        
+      </div>
+    </form>
+
+  </div>
+
+  <!-- member -->
+  <div class="memberTitle" id="member">
+    <header>
+      <h1>Our Group Members</h1>
+    </header>
+    <ul class="memberIndividual">
+      <li>
+        <img src="./bps.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Mg Bhone Pyae Sone</h6>
+            <p>2IST-66</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./smk.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Mg Soe Moe Kyaw</h6>
+            <p>2IST-24</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./zmt.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Mg Zin Min Thant</h6>
+            <p>2IST-71</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./eitheint.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Ei Ei Theint</h6>
+            <p>2IST-14</p>
+          </span>
+        </div>
+      </li>
+
+
+      <li>
+        <img src="./Shree_Phaw.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Naw Lal Shree Phaw</h6>
+            <p>2IST-22</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./trm.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Thiri Mon</h6>
+            <p>2IST-27</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./kth.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Khin Thet Hnin</h6>
+            <p>2IST-29</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./hetzh.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Hnin Ei Thazin Htwe</h6>
+            <p>2IST-34</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./tzw.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Thuzar Win</h6>
+            <p>2IST-61</p>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <img src="./stl.jpg" alt="">
+        <div class="memberContent">
+          <span>
+            <h6>Ma Shin Thant Lwin</h6>
+            <p>2IST-63</p>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./code4kids.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
